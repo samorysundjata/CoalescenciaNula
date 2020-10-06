@@ -2,32 +2,34 @@
 
 namespace CoalescenciaNula
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        #region Private Methods
+
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Digite um número");
+            Console.WriteLine("Escreva Null na linha abaixo e dê Enter:");
 
-            int? x = Console.Read();
+            Console.ReadLine();
 
+            int? x = null;
 
             var resultx = x ?? 0;
 
-
             Console.WriteLine(resultx);
 
+            Console.WriteLine("Digite ZERO ou DEZ e dê Enter:");
 
-            int? y = 10;
-
+            int? y = Convert.ToInt32(Console.ReadLine());
 
             var resulty = y ?? 0;
 
-
             Console.WriteLine(resulty);
 
-            Console.WriteLine("Digite ENTER duas vezes para sair");
+            Console.Write("Pressione qualquer tecla para fechar...");
             Console.ReadKey();
-
         }
+
+        #endregion Private Methods
     }
 }
