@@ -20,11 +20,16 @@ namespace CoalescenciaNula
 
             Console.WriteLine("Digite ZERO ou DEZ e dê Enter:");
 
-            int? y = Convert.ToInt32(Console.ReadLine());
-
-            var resulty = y ?? 0;
-
-            Console.WriteLine(resulty);
+            try
+            {
+                int? y = Convert.ToInt32(Console.ReadLine());
+                var resulty = y ?? 0;
+                Console.WriteLine(resulty);
+            }
+            catch (System.FormatException)
+            {
+                Console.WriteLine("Você não colocou um número!");
+            }
 
             Console.Write("Pressione qualquer tecla para fechar...");
             Console.ReadKey();
