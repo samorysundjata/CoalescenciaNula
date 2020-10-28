@@ -5,6 +5,7 @@ namespace CoalescenciaNula
     internal class Program
     {
         #region Private Methods
+
         private static void Main(string[] args)
         {
             Console.WriteLine("Escreva Null na linha abaixo e dê Enter:");
