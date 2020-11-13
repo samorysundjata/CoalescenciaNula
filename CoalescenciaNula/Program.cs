@@ -12,11 +12,18 @@ namespace CoalescenciaNula
 
             Console.ReadLine();
 
-            int? x = null;
+            try
+            {
+                int? x = null;
 
-            var resultx = x ?? 0;
+                var resultx = x ?? 0;
 
-            Console.WriteLine(resultx);
+                Console.WriteLine(resultx);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Erro!");
+            }
 
             Console.WriteLine("Digite ZERO ou DEZ e dê Enter:");
 
